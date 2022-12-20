@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light_gray: hsl(212, 45%, 89%);
+    --Grayish_blue: hsl(220, 15%, 55%);
+    --Dark_blue: hsl(218, 44%, 22%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.background-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Light_gray);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    width: 20%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.qr {
+    width: 95%;
+    border-radius: 5px;
+}   
+
+.text-section {
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.description {
+    color: var(--Grayish_blue);
+}
+
+/* Media Queries */
+
+@media (min-width: 56.25em) and (max-width: 73.30em){
+    html {
+        font-size: 55%;
+    }
+    .card{
+        width:25%;
+    }
+}
+
+@media (min-width: 37.5em) and (max-width: 56.25em){
+    html {
+        font-size: 50%;
+    }
+    .card{
+        width:30%;
+    }
+}
+
+@media (min-width: 30em) and (max-width: 37.5em){
+    html {
+        font-size: 45%;
+    }
+    .card{
+        width: 55%;
+    }
+}
+
+@media (min-width: 20em) and (max-width: 30em){
+    html {
+        font-size: 40%;
+    }
+    .card{
+        width: 60%;
+    }
+}
+
+@media (max-width: 20em){
+    html {
+        font-size: 40%;
+    }
+    .card{
+        width:75%;
+    }
+}
+
